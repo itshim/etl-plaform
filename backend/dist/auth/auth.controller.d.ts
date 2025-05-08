@@ -5,13 +5,6 @@ export declare class AuthController {
     register(body: {
         email: string;
         password: string;
-    }): Promise<{
-        id: number;
-        email: string;
-        createdAt: Date;
-        updatedAt: Date;
-    } | null>;
-    login(req: any): Promise<{
-        access_token: string;
-    }>;
+    }): unknown;
+    login(req: any): unknown;
 }
